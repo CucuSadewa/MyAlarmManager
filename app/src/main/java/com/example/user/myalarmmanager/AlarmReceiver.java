@@ -52,7 +52,7 @@ public class AlarmReceiver extends BroadcastReceiver {
         intent.putExtra(EXTRA_MESSAGE, message);
         intent.putExtra(EXTRA_TYPE, type);
         String dateArray[] = date.split("-");
-        String timeArray[] = time.split("-");
+        String timeArray[] = time.split(":");
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.YEAR, Integer.parseInt(dateArray[0]));
         calendar.set(Calendar.MONTH, Integer.parseInt(dateArray[1])-1);
